@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textRoleSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Role"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textTitlePageType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Page Type"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Routine Page"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonUrgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Urgent Page"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonEmergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Emergency Page" />
+
+</LinearLayout>

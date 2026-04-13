@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On-Call Paging App"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page CT Technologist"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCathLab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Cath Lab Team"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRadiologist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Radiologist"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSupervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Supervisor" />
+
+</LinearLayout>
