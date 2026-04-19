@@ -9,6 +9,7 @@
         android:id="@+id/textConfirmTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Confirm Page Details"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp" />
@@ -25,13 +26,28 @@
         android:id="@+id/textConfirmPageType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Page Type:"
         android:textSize="20sp"
         android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/buttonSendPage"
+        android:id="@+id/buttonSendSMS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Page" />
+        android:text="Send SMS"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonBackToHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home" />
 
 </LinearLayout>

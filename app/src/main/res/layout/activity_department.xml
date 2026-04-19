@@ -6,7 +6,7 @@
     android:padding="24dp">
 
     <TextView
-        android:id="@+id/textLoginTitle"
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="On-Call Paging App"
@@ -15,32 +15,44 @@
         android:layout_marginBottom="8dp" />
 
     <TextView
-        android:id="@+id/textLoginSubtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Staff Login"
-        android:textSize="20sp"
-        android:layout_marginBottom="24dp" />
-
-    <EditText
-        android:id="@+id/editUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Username"
-        android:layout_marginBottom="16dp" />
-
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:text="Select a department to page:"
+        android:textSize="16sp"
         android:layout_marginBottom="24dp" />
 
     <Button
-        android:id="@+id/buttonSignIn"
+        android:id="@+id/buttonCT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign In" />
+        android:text="Page CT Technologist"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonCathLab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Cath Lab Team"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonRadiologist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Radiologist"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSupervisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Supervisor"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Login" />
 
 </LinearLayout>

@@ -1,12 +1,12 @@
 package com.example.oncallapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class PageTypeActivity extends AppCompatActivity {
 
@@ -26,6 +26,9 @@ public class PageTypeActivity extends AppCompatActivity {
         buttonRoutine = findViewById(R.id.buttonRoutine);
         buttonUrgent = findViewById(R.id.buttonUrgent);
         buttonEmergency = findViewById(R.id.buttonEmergency);
+
+        // Back button
+        Button buttonBack = findViewById(R.id.buttonBack);
 
         selectedRole = getIntent().getStringExtra("selectedRole");
 
@@ -51,6 +54,14 @@ public class PageTypeActivity extends AppCompatActivity {
                 openConfirmationScreen("Emergency");
             }
         });
+
+        // Back button action
+        buttonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     public void openConfirmationScreen(String pageType) {
@@ -60,4 +71,3 @@ public class PageTypeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 }
-
