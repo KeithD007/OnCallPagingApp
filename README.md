@@ -72,27 +72,23 @@ b.	Password field
 
 c.	Sign In button
 
-###	Screen 2: Home Screen
+###	Screen 2: Department Selection
 
 a.	Department list
 
 b.	On call categories such as Radiology, Cath lab, Nursing Supervisor
 
-c.	Button to view current on call staff
+###	Screen 3: Page Type Selection
 
-###	Screen 3: Staff Selection Screen
-
-a.	Contact info for on call employee
-
-b.	Send page button
+a.	Options for Routine, Urgent, Emergency
 
 ###	Screen 4: Confirmation Screen
 
-a.	Message that an alert was sent
+a.	Displays selected role and priority
 
-b.	Time stamp
+b.	SMS or Email option for send
 
-c.	Retry or escalate option
+c.	Confirmation message with timestamp
 
 ###	Screen 5: Admin Screen, optional future version
 
