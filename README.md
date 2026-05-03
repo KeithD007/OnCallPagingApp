@@ -1,137 +1,201 @@
 # On-Call Paging App for Android
+
 ## Project Description
 The On-Call Paging App is an Android-based application designed for hospital environments to improve communication during urgent and emergency situations. The application allows healthcare staff to quickly page on-call personnel without relying on manual phone calls or searching through call schedules.
 
-The app provides a centralized interface where users can select a specific role, such as CT technologist, Cath lab team, radiologist, or supervisor, and send an alert directly to the appropriate on-call individual. The goal of the project is to create a simple, efficient, and user-friendly communication tool that improves response time and workflow efficiency in healthcare settings.
+The app provides a centralized interface where users can select a specific role and send an alert directly to the appropriate on-call individual.
 
----	
+**Key goals:**
+- Improve response time  
+- Reduce workflow delays  
+- Provide a centralized communication tool  
+- Support efficient healthcare operations  
+
+---
+
 ## Problem Addressing
-In many hospital departments, contacting on-call staff is a manual and time-consuming process. Staff must locate schedules, make phone calls, and often repeat the process if the first contact does not respond. This leads to delays in communication, workflow inefficiencies, and potential impacts on patient care.
+In many hospital departments, contacting on-call staff is a manual and time-consuming process.
 
-The application addresses this problem by organizing on-call roles into a single interface and allowing users to quickly send alerts. By reducing the time needed to contact staff, the app improves response times and supports more efficient clinical workflows.
+**Current challenges include:**
+- Searching for schedules  
+- Making multiple phone calls  
+- Repeating contact attempts if no answer  
+- Delays in urgent situations  
+
+**Impact:**
+- Workflow inefficiencies  
+- Staff frustration  
+- Delays in patient care  
+
+**Solution provided by the app:**
+- Centralized role selection  
+- Quick alert communication  
+- Improved response time  
+- More efficient clinical workflows  
 
 ---
+
 ## Platform
-Android (Primary Platform)
-Developed using Android Studio
-Designed for smartphones and tablets used in healthcare environments
-Future expansion may include iOS or web-based platforms
+- Android (Primary Platform)  
+- Developed using Android Studio  
+- Designed for smartphones and tablets in healthcare environments  
+
+**Future expansion:**
+- iOS platform  
+- Web-based access  
 
 ---
+
 ## Front End and Back End Support
+
 ### Front End Support
-####	 XML-based user interface design
-####	Simple, clean layout for fast navigation
-####	Multi-screen structure for ease of use under pressure
-####	Screens include:
-#####	Login
-#####	Department selection
-#####	Page type selection
-#####	Confirmation
-	
+- XML-based user interface design  
+- Simple, clean layout for fast navigation  
+- Multi-screen structure for ease of use under pressure  
+
+**Screens include:**
+- Login  
+- Department selection  
+- Page type selection  
+- Confirmation  
+
+---
+
 ### Back End Support (Current and Future)
-####	Current version does not include a live backend
-####	Uses Android Intents for communication (SMS and Email)
-####	Future implementation may include:
-####	Cloud-based database
-####	Real-time on-call scheduling
-####	Integration with hospital systems
+
+**Current:**
+- No live backend connection  
+- Uses Android Intents for:
+  - SMS  
+  - Email  
+
+**Future:**
+- Cloud-based database  
+- Real-time on-call scheduling  
+- Integration with hospital systems  
+
 ---
+
 ## Functionality
+
 ### Current Features
-####	User login with basic validation
-####	Selection of on-call roles:
-#####		CT Technologist
-#####		Cath Lab Team
-#####		Radiologist
-#####		Supervisor
-####	Selection of page priority:
-#####		Routine
-#####		Urgent
-#####		Emergency
-####	Multi-screen navigation using Intents
-####	Confirmation screen displaying selected options
-####	Ability to send:
-#####		SMS messages
-#####		Email messages
-####	Back navigation between screens
+- User login with basic validation  
+
+- Selection of on-call roles:
+  - CT Technologist  
+  - Cath Lab Team  
+  - Radiologist  
+  - Supervisor  
+
+- Page priority selection:
+  - Routine  
+  - Urgent  
+  - Emergency  
+
+- Multi-screen navigation using Intents  
+
+- Confirmation screen displaying selected options  
+
+- Communication options:
+  - SMS messages  
+  - Email messages  
+
+- Back navigation between screens  
+
+---
+
 ### Future Features
-####	Real-time on-call integration
-####	Secure authentication system
-####	Escalation if no response is recieved
-####	Admin tools for schedule management
-####	Push notifications
+- Real-time on-call integration  
+- Secure authentication system  
+- Escalation if no response is received  
+- Admin tools for schedule management  
+- Push notifications  
 
 ---
+
 ## Design and Wireframes
-###	Screen 1: Login Screen
 
-a.	Username field
-
-b.	Password field
-
-c.	Sign In button
-
-###	Screen 2: Department Selection
-
-a.	Department list
-
-b.	On call categories such as Radiology, Cath lab, Nursing Supervisor
-
-###	Screen 3: Page Type Selection
-
-a.	Options for Routine, Urgent, Emergency
-
-###	Screen 4: Confirmation Screen
-
-a.	Displays selected role and priority
-
-b.	SMS or Email option for send
-
-c.	Confirmation message with timestamp
-
-###	Screen 5: Admin Screen, optional future version
-
-a.	Update on call schedules
-
-b.	Add or remove staff
-
-c.	Review alert log
+### Screen 1: Login Screen
+- Username field  
+- Password field  
+- Sign In button  
 
 ---
 
-## Current Implemenation (Week 8)
+### Screen 2: Department Selection
+- Department list  
+- On-call categories:
+  - Radiology  
+  - Cath Lab  
+  - Nursing Supervisor  
+
+---
+
+### Screen 3: Page Type Selection
+- Routine  
+- Urgent  
+- Emergency  
+
+---
+
+### Screen 4: Confirmation Screen
+- Displays selected role and priority  
+- Send options:
+  - SMS  
+  - Email  
+- Confirmation message with timestamp  
+
+---
+
+### Screen 5: Admin Screen (Future)
+- Update on-call schedules  
+- Add or remove staff  
+- Review alert log  
+
+---
+
+## Current Implementation (Week 8)
 The application is a functional multi-screen Android app developed using Java and Android Studio.
 
 ### Implemented Screens
-- Login Screen (MainActivity)
-- Department Selection Screen (DepartmentActivity)
-- Page Type Selection Screen (PageTypeActivity)
-- Confirmation Screen (ConfirmActivity)
-  
+- Login Screen (MainActivity)  
+- Department Selection Screen (DepartmentActivity)  
+- Page Type Selection Screen (PageTypeActivity)  
+- Confirmation Screen (ConfirmActivity)  
+
+---
+
 ### Technical Concepts Used
-- Java programming
-- Android Activities and lifecycle
-- Intents for navigation
-- Implicit Intents for SMS and Email
-- XML layouts
-- Toast messages for feedback
-  
+- Java programming  
+- Android Activities and lifecycle  
+- Intents for navigation  
+- Implicit Intents for SMS and Email  
+- XML layouts  
+- Toast messages for feedback  
+
+---
+
 ### Application Flow
-Login → Department Selection → Page Type → Confirmation → Send Page
+Login → Department Selection → Page Type → Confirmation → Send Page  
+
+---
 
 ### Limitations
-- No backend database connection
-- Contact data is not dynamically stored
-- Relies on external apps for SMS and Email
-- Basic authentication only
-  
-### Future Improvements
-- Integrate backend database for real-time schedules
-- Implement secure login system
-- Store and manage contact information dynamically
-- Add escalation logic for unanswered pages
-- Improve UI/UX design
-- Version Control
+- No backend database connection  
+- Contact data is not dynamically stored  
+- Relies on external apps for SMS and Email  
+- Basic authentication only  
 
+---
+
+### Future Improvements
+- Integrate backend database for real-time schedules  
+- Implement secure login system  
+- Store and manage contact information dynamically  
+- Add escalation logic for unanswered pages  
+- Improve UI/UX design  
+
+---
+
+## Version Control
 All updates and improvements are documented in the CHANGELOG.md file.
